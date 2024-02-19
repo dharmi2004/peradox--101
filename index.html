@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+
+    <script>
+        var a ={
+            fname : "dharmi",
+            lname : "kathiriya",
+            age : "20",
+            email : "kathiriyadharmi18@gmail.com",
+            favcolor : ['yello','pink','blue','black'],
+            salary : function(){
+                return 25000;
+            },
+            fullname : function(){
+                return this.fname + "  " + this.lname
+                // this =  use for a(owner)
+            }
+        }
+        console.log(a);
+        document.write(a.fullname());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

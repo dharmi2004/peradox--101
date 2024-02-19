@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+
+
+        // slice
+        var a = ["pink", "yello", "blue", "orange", "black"];
+        document.write(a + "<br><br>");
+
+        var b = a.slice(1, 4);
+        document.write(b + "<br><br>");
+
+
+
+        // splice()
+
+        // splice(index,howmany,"new velue",delete)
+        var a = ["goat", "cat", "dog"];
+        document.write(a + "<br><br>");
+
+        a.splice(2,1, "lion","monkey");
+        document.write(a + "<br><br>");
+
+
+        // some() = chacks if any of the elements in an array pass a test
+         var ages = [ 10,14,21,18,20]
+         document.write(ages + "<br><br>");
+
+         var b = ages.some(checkAdult);
+         document.write(b + "<br><br>");
+         
+         function checkAdult(age){
+            return age >= 18;
+         }
+
+        //  every()
+        var ages = [ 10,14,21,18,20]
+         document.write(ages + "<br><br>");
+
+         var b = ages.every(checkAdult);
+         document.write(b + "<br><br>");
+         
+         function checkAdult(age){
+            return age >= 18;
+         }
+
+        //.length
+        const nature = ["sunflower", "sky", "yello", "sun"];
+        const pets = ["dog", "cat", "goat"]
+        let size = nature.length;
+        console.log(size);
+
+        // .string()
+
+        let string = nature.toString();
+        console.log("stirng", string)
+ 
+
+        // . at()
+        let at = nature.at(2)
+        console.log("at", at)
+
+
+        //. JOIN
+        console.log(nature.join("*"))
+
+
+        //5push method
+        nature.push("pineple")
+        console.log(nature)
+
+
+        //  pop method
+        console.log(nature.pop())
+
+
+        //  concat method
+        const newArray = nature.concat(pets)
+        console.log("newArray", newArray)
+
+ 
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

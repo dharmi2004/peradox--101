@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP (object oriented programming)</title>
+
+    <script>
+
+        class hello {
+            message() {
+                console.log("hello everyone");
+            }
+            goodmorning() {
+                console.log("goodmorning everyone");
+            }
+
+        }
+        let a = new hello();
+        a.message();
+        a.goodmorning();
+
+        // thps of methods
+        // 1. constructor
+        // 2.prototype
+        // 3. static
+
+        //  1 constructor
+        class student {
+            constructor() {
+                console.log("constructor function");
+            }
+            heyy() {
+                console.log("heyy" + this.name)
+            }
+
+        }
+        let y = new student();
+        y.name = "dharmi"
+        y.heyy();
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>OOP (E56 version)</h1>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+
+    <script>
+        function sayhello() {
+            console.log("hello");
+        }
+
+        function sayHii() {
+            console.log("Hii..");
+        }
+        function add(num1, num2, callback) {
+            console.log(num1 + num2);
+            callback();
+        }
+        let a = 10;
+        let b = 20;
+        add(a, b, sayhello);
+        add(30, 5, sayHii);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
